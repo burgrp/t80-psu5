@@ -1858,7 +1858,7 @@
   (gr_text "12V" (at 97.5 123.5) (layer "F.SilkS") (tstamp 34e3e614-ef30-4b19-88ff-1735179cf6b8)
     (effects (font (size 1 1) (thickness 0.15)) (justify bottom))
   )
-  (gr_text locked "T80-PSU12 v1.0" (at 98 63) (layer "F.SilkS") (tstamp 7825e4a3-3e54-43cf-b9ec-93744373565e)
+  (gr_text locked "T80-PSU5 v1.0" (at 98 63) (layer "F.SilkS") (tstamp 7825e4a3-3e54-43cf-b9ec-93744373565e)
     (effects (font (size 1.5 1.5) (thickness 0.15)) (justify bottom))
   )
   (dimension (type aligned) (layer "Dwgs.User") (tstamp 41a42086-5f33-43a6-92d1-b7e227a807de)
