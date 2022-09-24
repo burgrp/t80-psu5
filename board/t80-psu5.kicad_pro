@@ -130,7 +130,13 @@
         "overlapping_pads|98000000|105000000|722af09e-29c4-4c45-ba26-7d17cb3db6b6|cf4c54b2-32c9-460e-bee8-9a7820b9d812",
         "overlapping_pads|98000000|105000000|cf4c54b2-32c9-460e-bee8-9a7820b9d812|722af09e-29c4-4c45-ba26-7d17cb3db6b6",
         "overlapping_pads|98000000|111000000|4b435bb0-92e0-4104-8016-95350e07ee05|bc511bd9-2aa4-4e7c-b4bd-6a7726800c39",
+        "silk_edge_clearance|101000000|103290000|1df56460-fdcc-438b-a762-483dfb0d521e|2221fd3c-117a-4b96-b8fa-773c9881ddf4",
+        "silk_edge_clearance|101000000|103290000|1df56460-fdcc-438b-a762-483dfb0d521e|e3ec210b-b315-4fa0-92f7-2a5b40468f6d",
+        "silk_edge_clearance|101000000|82710000|1df56460-fdcc-438b-a762-483dfb0d521e|4a5c9d1a-ceb9-4826-b2ce-358e200e70b3",
+        "silk_edge_clearance|101000000|90950000|1df56460-fdcc-438b-a762-483dfb0d521e|fcacd190-8bb3-4bca-add1-f8ac3d1ccdda",
+        "silk_edge_clearance|101000000|95050000|1df56460-fdcc-438b-a762-483dfb0d521e|cb666452-ad9f-45bc-8936-9b9d94d05937",
         "silk_edge_clearance|102000000|140000000|504dff50-283c-4b8f-b933-deb78095bb31|716bacdc-5908-4b43-a11f-2eeb775f358b",
+        "silk_edge_clearance|104365555|133000000|392e017b-1f8d-4649-9278-9e17c25bf586|00af9d59-6308-45a9-bd98-8f290bd1bcfc",
         "silk_edge_clearance|105000000|106440000|31dd8a2d-1609-4937-8119-e2370ac75178|7943d8c0-bd7a-4108-baa3-77775eb49da1",
         "silk_edge_clearance|105000000|93620000|31dd8a2d-1609-4937-8119-e2370ac75178|1d3a9ddc-170f-48fc-9ae9-0f372cc2411a",
         "silk_edge_clearance|105000000|93620000|31dd8a2d-1609-4937-8119-e2370ac75178|51baaba7-9abe-4e3d-834f-eaf31826d0f2",
@@ -146,6 +152,7 @@
         "silk_edge_clearance|93000000|140000000|504dff50-283c-4b8f-b933-deb78095bb31|319e7fed-a4b4-48e8-84ea-99cb796740d6",
         "silk_edge_clearance|99000000|140000000|504dff50-283c-4b8f-b933-deb78095bb31|716bacdc-5908-4b43-a11f-2eeb775f358b",
         "silk_overlap|101867380|73833332|5261de94-21a0-495e-882b-9a97e35a1122|90c8dae8-51b2-472b-bbb7-af303c686372",
+        "silk_overlap|116300000|69735000|2a8432a0-d072-4447-be60-738e032788e0|e2993577-de5d-4f47-b4e3-8cd685b56172",
         "silk_overlap|89735000|73772936|5ef6e256-a04c-4ead-ba01-d06cf0aa9b22|23d15f44-4ef9-4163-834d-99947b9ee4c0",
         "silk_overlap|89867380|73833332|23d15f44-4ef9-4163-834d-99947b9ee4c0|5ef6e256-a04c-4ead-ba01-d06cf0aa9b22",
         "silk_overlap|90000000|125825000|319e7fed-a4b4-48e8-84ea-99cb796740d6|17ac8821-1852-42c8-9aa0-8d08619640e6",
@@ -292,7 +299,10 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "pin_to_pin|1511300|1054100|830f2655-0bc7-41c4-ae78-90f20aa0a29c|a7251fa5-571d-4945-9cf6-6628f528b9d4",
+      "pin_to_pin|596900|1841500|9a86b3af-aa3b-48cc-aa6c-33aaa119f149|122eb20e-4f17-4c52-b5e8-92f95d9b77ed"
+    ],
     "meta": {
       "version": 0
     },
@@ -507,7 +517,7 @@
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -521,10 +531,10 @@
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -535,10 +545,10 @@
         "name": "PWR_LINE",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 2.0,
-        "via_diameter": 2.0,
-        "via_drill": 1.0,
-        "wire_width": 6.0
+        "track_width": 1.6,
+        "via_diameter": 1.6,
+        "via_drill": 0.8,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -549,7 +559,15 @@
     "netclass_patterns": [
       {
         "netclass": "PWR_LINE",
-        "pattern": "/PWR_LINE_*"
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "PWR_LINE",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "PWR_LINE",
+        "pattern": "GND"
       }
     ]
   },
